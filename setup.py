@@ -1,6 +1,5 @@
 from __future__ import annotations
 import setuptools
-import tmux_start
 
 def get_install_requires() -> list[str]:
     with open("./requirements.txt") as f:
@@ -9,12 +8,18 @@ def get_install_requires() -> list[str]:
 
 setuptools.setup(
     name="tmux-start",
-    version=tmux_start.__version__,
+    version="0.1.0",
 
     author="Akkuzin Ilya",
     author_email="gr3yknigh1@gmail.com",
+    url="https://github.com/gr3yknigh1/tmux-start",
+
+    py_modules=["tmux_start"],
+
     entry_points={
         "console_scripts": ["tmux-start = tmux_start:main"]
     },
-    install_requires=get_install_requires()
+
+    install_requires=get_install_requires(),
+    python_requires=">=3.10"
 )
