@@ -4,6 +4,7 @@ import libtmux
 import libtmux.server
 
 
+__version__ = "0.1.0"
 
 
 # TODO: replace try-except with port check
