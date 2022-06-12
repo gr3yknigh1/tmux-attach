@@ -7,17 +7,17 @@ def get_install_requires() -> list[str]:
     return raw_data.splitlines()
 
 setuptools.setup(
-    name="tmux-start",
+    name="tmux-attach",
     version="0.1.0",
 
     author="Akkuzin Ilya",
     author_email="gr3yknigh1@gmail.com",
-    url="https://github.com/gr3yknigh1/tmux-start",
+    url="https://github.com/gr3yknigh1/tmux-attach",
 
-    py_modules=["tmux_start"],
+    py_modules=["tmux_attach"],
 
     entry_points={
-        "console_scripts": ["tmux-start = tmux_start:main"]
+        "console_scripts": ["tmux-attach = tmux_attach:main"]
     },
 
     install_requires=get_install_requires(),
