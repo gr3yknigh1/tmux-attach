@@ -1,4 +1,4 @@
-# Tmux attach
+# tmux session selector
 
 Simple tmux session selector
 
@@ -7,19 +7,19 @@ Simple tmux session selector
 1. Clone repository
 
 ```shell
-git clone https://github.com/gr3yknigh1/tmux-attach
+git clone https://github.com/gr3yknigh1/tmux-session-selector
 ```
 
 2. Install it with pip
 
 ```shell
-pip install tmux-attach
+pip install tmux-session-selector
 ```
 
 3. Try run
 
 ```shell
-tmux-attach
+tmux-session-selector
 ```
 
 ## Hook with `fish` shell and `alacritty`:
@@ -30,6 +30,12 @@ tmux-attach
 shell:
   program: /usr/bin/fish
   args:
-    - --command=tmux-attach
+    - --command=tmux-session-selector
+```
+
+If you want to quit selection and drop into `fish` without `tmux`, just add second command:
+
+```yaml
+    - --command=fish
 ```
 

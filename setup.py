@@ -7,17 +7,17 @@ def get_install_requires() -> list[str]:
     return raw_data.splitlines()
 
 setuptools.setup(
-    name="tmux-attach",
+    name="tmux-session-selector",
     version="0.1.0",
 
     author="Akkuzin Ilya",
     author_email="gr3yknigh1@gmail.com",
-    url="https://github.com/gr3yknigh1/tmux-attach",
+    url="https://github.com/gr3yknigh1/tmux-session-selector",
 
-    py_modules=["tmux_attach"],
+    py_modules=["tmux_session_selector"],
 
     entry_points={
-        "console_scripts": ["tmux-attach = tmux_attach:main"]
+        "console_scripts": ["tmux-session-selector = tmux_session_selector:main"]
     },
 
     install_requires=get_install_requires(),
