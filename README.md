@@ -33,3 +33,8 @@ shell:
     - --command=tmux-attach
 ```
 
+If you want to quit selection and drop into fish without tmux, just add second command:
+
+```yaml
+    - --command=fish
+```
