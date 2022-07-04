@@ -6,7 +6,7 @@ import libtmux
 import libtmux.server
 
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 
 def create_new_session(server: libtmux.Server, session_name="0"):
