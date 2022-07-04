@@ -1,6 +1,6 @@
 # tmux session selector
 
-Simple tmux session selector
+Simple `tmux` session selector
 
 ## Installation
 
@@ -10,7 +10,7 @@ Simple tmux session selector
 git clone https://github.com/gr3yknigh1/tmux-session-selector
 ```
 
-2. Install it with pip
+2. Install it with `pip`
 
 ```shell
 pip install tmux-session-selector
@@ -24,7 +24,7 @@ tmux-session-selector
 
 ## Hook with `fish` shell and `alacritty`:
 
-> Note that this script force you to use terminal with tmux
+> Note that this script force you to use terminal with `tmux`
 
 ```yaml
 shell:
@@ -39,3 +39,8 @@ If you want to quit selection and drop into `fish` without `tmux`, just add seco
     - --command=fish
 ```
 
+If you want to quit selection and drop into `fish` without `tmux`, just add second command:
+
+```yaml
+    - --command=fish
+```
