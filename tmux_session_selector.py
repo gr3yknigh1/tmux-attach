@@ -44,7 +44,8 @@ def main() -> int:
     print(f"[q]: Quit selection")
     print(f"[n]: Create new session")
 
-    if is_server_running(): sessions.extend(server.list_sessions())
+    if is_server_running():
+        sessions.extend(server.list_sessions())
 
         for idx, session in enumerate(sessions):
             session_name = session.get("session_name")
@@ -56,7 +57,7 @@ def main() -> int:
         if selection not in string.digits and selection not in  "nq":
             print("You must enter digit or 'n' or 'q'")
             continue
-        
+
         if selection not in 'nq' and int(selection) not in range(len(sessions)):
             print("Input digit must be in range of list")
             continue
