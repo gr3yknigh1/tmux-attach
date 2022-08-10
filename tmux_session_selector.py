@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import os
-import subprocess
 import psutil
-import time
 import string
 import libtmux
 import libtmux.server
